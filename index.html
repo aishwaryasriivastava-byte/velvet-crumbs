@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Velvet Crumbs | Premium Cake Shop</title>
+
+    <meta name="description"
+        content="Velvet Crumbs - Premium freshly baked cakes for birthdays, celebrations and special moments.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+        <nav class="nav-container">
+
+            <a href="#home" class="logo">
+                Velvet <span>Crumbs</span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#cakes">Cakes</a>
+                <a href="#special">Special</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+
+                <button class="icon-btn" id="themeBtn" type="button" title="Toggle theme">
+                    🌙
+                </button>
+
+                <button class="cart-btn" id="cartButton" type="button">
+                    🛒
+                    <span id="cartCount">0</span>
+                </button>
+
+                <button
+                    class="hamburger"
+                    id="hamburger"
+                    type="button"
+                    aria-label="Open Menu"
+                    aria-expanded="false">
+                    ☰
+                </button>
+
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HOME ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="hero-small">PREMIUM CAKES • FRESHLY BAKED</p>
+
+                <h1>
+                    Sweet Moments
+                    <span>Deserve Beautiful Cakes</span>
+                </h1>
+
+                <p class="hero-text">
+                    Delicious handcrafted cakes made with love,
+                    premium ingredients and a little bit of magic.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#cakes" class="primary-btn">
+                        Explore Cakes
+                    </a>
+
+                    <a href="#custom" class="secondary-btn">
+                        Custom Cake
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>20+</strong>
+                        <span>Signature Cakes</span>
+                    </div>
+
+                    <div>
+                        <strong>100%</strong>
+                        <span>Freshly Baked</span>
+                    </div>
+
+                    <div>
+                        <strong>4.9★</strong>
+                        <span>Customer Love</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CAKES ================= -->
+
+        <section class="section" id="cakes">
+
+            <div class="section-heading">
+
+                <p class="section-label">OUR COLLECTION</p>
+
+                <h2>Find Your Perfect Cake</h2>
+
+                <p>
+                    Choose from our delicious collection of freshly baked cakes.
+                </p>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="search-wrapper">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search your favourite cake..."
+                    autocomplete="off">
+
+                <button id="clearSearch" type="button">
+                    ✕
+                </button>
+
+            </div>
+
+            <p id="searchResult" class="search-result"></p>
+
+
+            <!-- CATEGORY BUTTONS -->
+
+            <div class="categories" id="categories">
+
+                <button class="category-btn active" data-category="all">
+                    All
+                </button>
+
+                <button class="category-btn" data-category="birthday">
+                    Birthday
+                </button>
+
+                <button class="category-btn" data-category="chocolate">
+                    Chocolate
+                </button>
+
+                <button class="category-btn" data-category="designer">
+                    Designer
+                </button>
+
+                <button class="category-btn" data-category="red-velvet">
+                    Red Velvet
+                </button>
+
+                <button class="category-btn" data-category="cupcakes">
+                    Cupcakes
+                </button>
+
+            </div>
+
+
+            <!-- CAKE GRID -->
+
+            <div class="cake-grid" id="cakeGrid"></div>
+
+        </section>
+
+
+        <!-- ================= TODAY'S SPECIAL ================= -->
+
+        <section class="special-section" id="special">
+
+            <div class="special-image">
+
+                <img
+                    src="images/Ferrero Rocher.jpeg"
+                    alt="Ferrero Rocher Cake">
+
+            </div>
+
+            <div class="special-content">
+
+                <p class="section-label">
+                    TODAY'S SPECIAL
+                </p>
+
+                <h2>
+                    Ferrero Rocher Cake
+                </h2>
+
+                <p>
+                    A rich chocolate masterpiece layered with
+                    creamy chocolate filling and topped with
+                    delicious Ferrero Rocher chocolates.
+                </p>
+
+                <div class="special-price">
+                    ₹1,099
+                </div>
+
+                <button
+                    class="primary-btn"
+                    type="button"
+                    onclick="addToCart(5)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GALLERY ================= -->
+
+        <section class="section" id="gallery">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    SWEET MOMENTS
+                </p>
+
+                <h2>Our Cake Gallery</h2>
+
+                <p>
+                    A glimpse of some of our beautiful creations.
+                </p>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item">
+                    <img
+                        src="images/Chocolate Truffle.jpeg"
+                        alt="Chocolate Truffle Cake">
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="images/Red Velvet.jpeg"
+                        alt="Red Velvet Cake">
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="images/Strawberry Rose.jpeg"
+                        alt="Strawberry Rose Cake">
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="images/Lotus Biscoff.jpeg"
+                        alt="Lotus Biscoff Cake">
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="images/Pink Blossom.jpeg"
+                        alt="Pink Blossom Cake">
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="images/Rainbow Unicorn.jpeg"
+                        alt="Rainbow Unicorn Cake">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CUSTOM CAKE ================= -->
+
+        <section class="section custom-section" id="custom">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    MAKE IT SPECIAL
+                </p>
+
+                <h2>Order Your Custom Cake</h2>
+
+                <p>
+                    Tell us what you have in mind and we'll
+                    create something special for you.
+                </p>
+
+            </div>
+
+
+            <form id="customForm" class="custom-form">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="customName">
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="customName"
+                            placeholder="Enter your name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="customPhone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="customPhone"
+                            placeholder="Enter phone number"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="customFlavour">
+                            Cake Flavour
+                        </label>
+
+                        <select id="customFlavour" required>
+
+                            <option value="">
+                                Select flavour
+                            </option>
+
+                            <option value="Chocolate">
+                                Chocolate
+                            </option>
+
+                            <option value="Vanilla">
+                                Vanilla
+                            </option>
+
+                            <option value="Red Velvet">
+                                Red Velvet
+                            </option>
+
+                            <option value="Strawberry">
+                                Strawberry
+                            </option>
+
+                            <option value="Butterscotch">
+                                Butterscotch
+                            </option>
+
+                            <option value="Mango">
+                                Mango
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="customSize">
+                            Cake Size
+                        </label>
+
+                        <select id="customSize" required>
+
+                            <option value="">
+                                Select size
+                            </option>
+
+                            <option value="0.5 Kg">
+                                0.5 Kg
+                            </option>
+
+                            <option value="1 Kg">
+                                1 Kg
+                            </option>
+
+                            <option value="1.5 Kg">
+                                1.5 Kg
+                            </option>
+
+                            <option value="2 Kg">
+                                2 Kg
+                            </option>
+
+                            <option value="3 Kg">
+                                3 Kg
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="customDate">
+                        Required Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="customDate"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="customMessage">
+                        Cake Details
+                    </label>
+
+                    <textarea
+                        id="customMessage"
+                        rows="5"
+                        placeholder="Tell us about your design, colour, message etc."
+                        required></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="primary-btn">
+                    Order Custom Cake
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="section about-section" id="about">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    ABOUT US
+                </p>
+
+                <h2>Made With Love</h2>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="about-card">
+
+                    <div class="about-icon">
+                        🎂
+                    </div>
+
+                    <h3>Freshly Baked</h3>
+
+                    <p>
+                        Every cake is freshly baked using
+                        quality ingredients.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <div class="about-icon">
+                        ❤️
+                    </div>
+
+                    <h3>Made With Love</h3>
+
+                    <p>
+                        We put care and creativity into every
+                        cake we create.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <div class="about-icon">
+                        ✨
+                    </div>
+
+                    <h3>Beautiful Designs</h3>
+
+                    <p>
+                        From simple cakes to elegant designer
+                        cakes, we make every celebration special.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= REVIEWS ================= -->
+
+        <section class="section reviews-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    CUSTOMER LOVE
+                </p>
+
+                <h2>What Our Customers Say</h2>
+
+            </div>
+
+
+            <div class="reviews-grid">
+
+                <div class="review-card">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        "The cake was absolutely delicious and
+                        looked beautiful. Everyone loved it!"
+                    </p>
+
+                    <h4>— Happy Customer</h4>
+
+                </div>
+
+
+                <div class="review-card">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        "Amazing taste and beautiful design.
+                        Perfect for my birthday celebration."
+                    </p>
+
+                    <h4>— Happy Customer</h4>
+
+                </div>
+
+
+                <div class="review-card">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        "Fresh, tasty and beautifully decorated.
+                        Highly recommended!"
+                    </p>
+
+                    <h4>— Happy Customer</h4>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="section contact-section" id="contact">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    GET IN TOUCH
+                </p>
+
+                <h2>Contact Velvet Crumbs</h2>
+
+                <p>
+                    Have a question or want to place an order?
+                    We'd love to hear from you.
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+
+                <!-- CONTACT DETAILS -->
+
+                <div class="contact-details">
+
+
+                    <!-- LOCATION -->
+
+                    <div class="contact-item">
+
+                        <span>📍</span>
+
+                        <div>
+
+                            <h4>Location</h4>
+
+                            <p>
+                                75/1 P.B. Ghat Road,
+                                Agarpara,
+                                Kolkata - 700058
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div class="contact-item">
+
+                        <span>📞</span>
+
+                        <div>
+
+                            <h4>Phone</h4>
+
+                            <p>
+                                <a href="tel:6289263336">
+                                    6289263336
+                                </a>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="contact-item">
+
+                        <span>✉️</span>
+
+                        <div>
+
+                            <h4>Email</h4>
+
+                            <p>
+                                <a href="mailto:aish020206@gmail.com">
+                                    aish020206@gmail.com
+                                </a>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- WHATSAPP -->
+
+                    <div class="contact-item">
+
+                        <span>💬</span>
+
+                        <div>
+
+                            <h4>WhatsApp</h4>
+
+                            <p>
+                                <a
+                                    href="https://wa.me/916289263336"
+                                    target="_blank">
+                                    Chat With Us
+                                </a>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTACT FORM -->
+
+                <form id="contactForm" class="contact-form">
+
+                    <div class="form-group">
+
+                        <label for="contactName">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="contactName"
+                            placeholder="Your name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="contactEmail">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="contactEmail"
+                            placeholder="Your email"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="contactMessage">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="contactMessage"
+                            rows="6"
+                            placeholder="Write your message..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="primary-btn">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <h2>
+                    Velvet <span>Crumbs</span>
+                </h2>
+
+                <p>
+                    Beautiful cakes for beautiful moments.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+
+                <a href="#cakes">Cakes</a>
+
+                <a href="#gallery">Gallery</a>
+
+                <a href="#about">About</a>
+
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Velvet Crumbs. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= CART OVERLAY ================= -->
+
+    <div
+        class="cart-overlay"
+        id="cartOverlay">
+
+        <aside
+            class="cart-panel"
+            id="cartPanel">
+
+            <div class="cart-header">
+
+                <h2>Your Cart</h2>
+
+                <button
+                    id="closeCart"
+                    class="modal-close"
+                    type="button">
+                    ×
+                </button>
+
+            </div>
+
+
+            <div
+                class="cart-items"
+                id="cartItems">
+            </div>
+
+
+            <div
+                class="empty-cart"
+                id="emptyCart">
+
+                <div>
+                    🛒
+                </div>
+
+                <h3>Your cart is empty</h3>
+
+                <p>
+                    Add a delicious cake to get started.
+                </p>
+
+            </div>
+
+
+            <div class="cart-footer">
+
+                <div class="cart-total">
+
+                    <span>Total</span>
+
+                    <strong id="cartTotal">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <button
+                    id="checkoutButton"
+                    class="primary-btn"
+                    type="button">
+                    Checkout
+                </button>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+
+    <!-- ================= CHECKOUT MODAL ================= -->
+
+    <div
+        class="checkout-modal"
+        id="checkoutModal">
+
+        <div class="checkout-box">
+
+            <button
+                class="modal-close"
+                id="closeCheckout"
+                type="button">
+                ×
+            </button>
+
+
+            <h2>Checkout</h2>
+
+            <p>
+                Fill in your details to place your order.
+            </p>
+
+
+            <div
+                class="checkout-items"
+                id="checkoutItems">
+            </div>
+
+
+            <div class="checkout-total">
+
+                <span>Total</span>
+
+                <strong id="checkoutTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <form id="checkoutForm">
+
+                <div class="form-group">
+
+                    <label for="orderName">
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="orderName"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="orderPhone">
+                        Phone
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="orderPhone"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="orderEmail">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="orderEmail"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="orderAddress">
+                        Delivery Address
+                    </label>
+
+                    <textarea
+                        id="orderAddress"
+                        rows="3"
+                        required></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="deliveryDate">
+                        Delivery Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="deliveryDate"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="orderNote">
+                        Order Note
+                    </label>
+
+                    <textarea
+                        id="orderNote"
+                        rows="3"
+                        placeholder="Any special instructions?"></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="primary-btn">
+                    Place Order on WhatsApp
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= LIGHTBOX ================= -->
+
+    <div
+        class="checkout-modal"
+        id="lightbox">
+
+        <div
+            class="checkout-box"
+            style="max-width: 900px; text-align: center;">
+
+            <button
+                class="modal-close"
+                id="closeLightbox"
+                type="button">
+                ×
+            </button>
+
+            <img
+                id="lightboxImage"
+                src=""
+                alt="Cake Preview"
+                style="
+                    max-width:100%;
+                    max-height:75vh;
+                    border-radius:18px;
+                    object-fit:contain;
+                ">
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= TOAST ================= -->
+
+    <div
+        class="toast"
+        id="toast">
+    </div>
+
+
+    <!-- ================= SCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
